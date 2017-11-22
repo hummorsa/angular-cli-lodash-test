@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -24,4 +25,14 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
   }));
+
+  it('should sort Users', async(() => {
+     const fixture = TestBed.createComponent(AppComponent);
+      fixture.detectChanges();
+      fixture.componentInstance.tranform();
+      expect(fixture.componentInstance.users[0].age).toEqual(34);
+  }));
+
+
+
 });
