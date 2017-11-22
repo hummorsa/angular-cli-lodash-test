@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import _ from 'lodash';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-root',
