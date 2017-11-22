@@ -16,8 +16,7 @@ export class AppComponent {
   ];
 
 
-  public tranform (): any {
-
+  public transform (): any {
     this.users =  _.sortBy(this.users, 'age');
   }
 

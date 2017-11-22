@@ -29,7 +29,7 @@ describe('AppComponent', () => {
   it('should sort Users', async(() => {
      const fixture = TestBed.createComponent(AppComponent);
       fixture.detectChanges();
-      fixture.componentInstance.tranform();
+      fixture.componentInstance.transform();
       expect(fixture.componentInstance.users[0].age).toEqual(34);
   }));
 
